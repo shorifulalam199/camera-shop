@@ -1,0 +1,37 @@
+
+
+/* ===== start=====navber style======= */
+
+.container{
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+
+}
+
+.nav-list-item ul {
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+}
+
+.nav-list-item li, img{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.nav-list-item img{
+    width: 6%;
+    align-items: center;
+}

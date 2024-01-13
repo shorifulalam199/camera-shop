@@ -35,6 +35,14 @@
     font-weight: 600;
 }
 
+.nav-list-item li:hover, img:hover{
+    background-color: #E02C6D;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 1s;
+    transform: scale(.8);
+    cursor:pointer;
+}
 .nav-list-item img{
     width: 6%;
     align-items: center;
@@ -91,6 +99,22 @@ button > img{
 
 
 /* popular collectino start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

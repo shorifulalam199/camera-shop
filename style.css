@@ -166,9 +166,22 @@ button > img{
 }
 /* footer section */
 
-
-
-
+footer{
+    background: #0A0826;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+footer h1{
+    padding-top: 50px;
+}
+footer h4 i{
+    font-size: 2rem;
+    box-shadow: #cfb5b5;
+    border-radius: 5px;
+    padding: 20px;
+}
 
 
 

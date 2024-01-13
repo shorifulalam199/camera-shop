@@ -35,7 +35,7 @@
     font-weight: 600;
 }
 
-.nav-list-item li:hover, img:hover{
+.nav-list-item li:hover, .nav-list-item img:hover, .logo-area img:hover{
     background-color: #E02C6D;
     padding: 15px 20px;
     border-radius: 5px;
@@ -101,9 +101,70 @@ button > img{
 /* popular collectino start */
 
 
+.grid-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    gap: 10px;
+    padding: 20px;
+}
+.img-grid{
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+.img-grid i{
+    color:#FB8200 ;
+}
+.title-grid-images{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+}
 
 
+/* featcher section */
 
+.feacter-section{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+.featcher-section-img img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.featcher-section-text{
+    text-align: left;
+    padding: 20px 80px;
+}
+
+.btn-join{
+    padding: 10px 24px;
+    gap: 8px;
+    border-radius: 0px;
+}
+.btn-join:hover{
+    background-color:  #f5065e;
+}
+/* footer section */
 
 
 
@@ -130,9 +191,10 @@ button > img{
 /* mobile device */
 @media screen and (max-width: 576px) {
     .container{
-        width: 100%;
+        width: 95%;
     }
-    .navbar{
+    .navbar,
+    .feacter-section{
         flex-direction: column;
         margin: 0px;
     }
@@ -142,16 +204,33 @@ button > img{
 .header-first-section-text{
     text-align: center;
 }
+.grid-images{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    padding-left: 0;
 }
+.featcher-section-text{
+    text-align: left;
+    padding: 0px 20px;
+    margin-top: 0px;
+}
+
+}
+
+
 
 
 
 
 /* Tablet device */
 @media screen and (min-width: 577px) and (max-width: 960px) {
-    .navbar{
+    .navbar, .feacter-section{
         flex-direction: column;
         margin: 0px;
         
+    }
+
+    .grid-images{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
